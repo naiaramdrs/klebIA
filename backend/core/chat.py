@@ -28,8 +28,7 @@ def get_chat_history(chat_id):
     rows = response.data
     return [(row["user_question"], row["chat_answer"]) for row in rows]
 
-def get_answer(user_question, retriever, chat_id):
-    template = """
+ANSWER_TEMPLATE = """
     Você é uma assistente virtual especializada em atender estudantes e servidores do curso de Ciência da Computação da UFCG. Seu objetivo é fornecer respostas precisas, claras, úteis e educadas sobre qualquer informação relacionada ao curso.
     Você deve se comportar como se soubesse todas as informações naturalmente. Nunca mencione que utiliza documentos, histórico ou contexto para responder. Para o usuário, você deve parecer uma fonte confiável de conhecimento.
     Se não possuir informações suficientes para responder à solicitação, peça desculpas de forma educada e diga que, no momento, não pode ajudar com essa questão específica. Sugira ao estudante consultar o site oficial: https://www.computacao.ufcg.edu.br/. Em seguida, incentive-o a perguntar outra coisa.
@@ -53,16 +52,23 @@ def get_answer(user_question, retriever, chat_id):
 
     """
 
+# Gera a resposta sem tocar no Supabase. Retorna também os chunks usados (necessário para o Ragas)
+def generate_answer(user_question, retriever, history=[]):
     info_docs = retriever.invoke(user_question)
-    info_text = "\n\n".join([doc.page_content for doc in info_docs])
-    history = get_chat_history(chat_id)
-    
+    contexts = [doc.page_content for doc in info_docs]
+    info_text = "\n\n".join(contexts)
+
     model = get_model()
-    prompt = template.format(info_docs=info_text, user_question=user_question, chat_history=history)
+    prompt = ANSWER_TEMPLATE.format(info_docs=info_text, user_question=user_question, chat_history=history)
     response = model.generate_content(prompt)
-    add_chat_history(chat_id, user_question, response.text)
-    
-    return response.text
+    return response.text, contexts
+
+def get_answer(user_question, retriever, chat_id):
+    history = get_chat_history(chat_id)
+    answer, _ = generate_answer(user_question, retriever, history)
+    add_chat_history(chat_id, user_question, answer)
+
+    return answer
 
 def get_url_supabase():
     return os.getenv("SUPABASE_URL")

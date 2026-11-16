@@ -1,0 +1,102 @@
+[
+  {
+    "dificuldade": "facil",
+    "user_input": "Em que ano foi criado o curso de Ciência da Computação da UFCG?",
+    "reference": "O curso de Bacharelado em Ciência da Computação da UFCG foi criado em 1976 e é um dos mais antigos do Brasil."
+  },
+  {
+    "dificuldade": "facil",
+    "user_input": "Quantos períodos dura o curso de Ciência da Computação?",
+    "reference": "O curso tem duração de 9 períodos."
+  },
+  {
+    "dificuldade": "facil",
+    "user_input": "Quem é a secretária da coordenação de graduação?",
+    "reference": "A Secretária da Coordenação de Graduação é Klébia Larubia Soares dos Santos."
+  },
+  {
+    "dificuldade": "facil",
+    "user_input": "Qual o valor da bolsa de monitoria?",
+    "reference": "Desde o período letivo 2013.1, o valor da bolsa de monitoria é de R$ 300,00."
+  },
+  {
+    "dificuldade": "facil",
+    "user_input": "Qual foi o primeiro computador instalado na UFCG?",
+    "reference": "O primeiro computador foi um IBM 1130, instalado em 1968. Foi o primeiro computador em universidades do Norte e Nordeste do Brasil."
+  },
+  {
+    "dificuldade": "facil",
+    "user_input": "Quem é o tutor atual do PET Computação?",
+    "reference": "O PET Computação está atualmente sob a tutoria do professor Marcelo Barros."
+  },
+  {
+    "dificuldade": "facil",
+    "user_input": "Quem leciona a disciplina Programação para Web?",
+    "reference": "A disciplina TECC (Programação para Web), Turma 01, é lecionada por Demetrio Gomes Mestre."
+  },
+  {
+    "dificuldade": "medio",
+    "user_input": "Qual o e-mail e o telefone da secretaria do curso de graduação?",
+    "reference": "O e-mail da secretaria do curso de graduação é secgrad@computacao.ufcg.edu.br e o telefone é +55 (83) 2101-1027."
+  },
+  {
+    "dificuldade": "medio",
+    "user_input": "Quantos créditos de atividades complementares eu preciso para me formar?",
+    "reference": "No currículo 2023, são necessários no mínimo 30 créditos (450 horas) de atividades complementares flexíveis, dos quais 22 créditos (330 horas) devem ser em atividades acadêmicas de extensão. No currículo 2017, o mínimo é de 22 créditos (330 horas)."
+  },
+  {
+    "dificuldade": "medio",
+    "user_input": "Posso receber bolsa de um projeto e da monitoria ao mesmo tempo?",
+    "reference": "Não, a UFCG proíbe o acúmulo de bolsas. Porém, o bolsista de projeto pode participar da monitoria como voluntário."
+  },
+  {
+    "dificuldade": "medio",
+    "user_input": "Como funciona o TCC do curso?",
+    "reference": "O TCC é uma atividade obrigatória e individual, realizada sob a orientação de um professor do curso. É regulamentado pela Resolução 01/2019 do Colegiado do Curso, e todos os TCCs aprovados são publicados na Biblioteca Digital da UFCG."
+  },
+  {
+    "dificuldade": "medio",
+    "user_input": "Quais são as disciplinas do primeiro período?",
+    "reference": "O Período I tem 5 disciplinas obrigatórias (300 horas e 20 créditos): Fundamentos de Matemática para Ciência da Computação I, Programação I, Laboratório de Programação I, Introdução à Computação e Direito e Cidadania."
+  },
+  {
+    "dificuldade": "medio",
+    "user_input": "Quais os pré-requisitos de Estruturas de Dados e Algoritmos?",
+    "reference": "Estruturas de Dados e Algoritmos tem como pré-requisitos Programação II e Laboratório de Programação II, e como co-requisito Laboratório de Estruturas de Dados e Algoritmos."
+  },
+  {
+    "dificuldade": "medio",
+    "user_input": "Quais são as linhas de pesquisa do Programa de Pós-Graduação em Ciência da Computação?",
+    "reference": "O PPGCC, iniciado em 1973, tem área de concentração em Ciência da Computação e duas linhas de pesquisa: Metodologia e Técnicas da Computação e Sistemas de Computação."
+  },
+  {
+    "dificuldade": "dificil",
+    "user_input": "Trabalhei 450 horas numa empresa. Quantos créditos complementares consigo aproveitar com isso?",
+    "reference": "Atividades profissionais valem 1 crédito a cada 75 horas, então 450 horas equivalem a 6 créditos, dentro do limite máximo de 8 créditos. Para isso, é preciso ter integralizado pelo menos 80 créditos obrigatórios e apresentar uma declaração do empregador com o período do vínculo, a descrição das atividades e a carga horária semanal."
+  },
+  {
+    "dificuldade": "dificil",
+    "user_input": "Quantas horas-aula somam o primeiro e o quarto período juntos?",
+    "reference": "O Período I tem 300 horas-aula (20 créditos) e o Período IV tem 360 horas-aula (24 créditos), somando 660 horas-aula e 44 créditos."
+  },
+  {
+    "dificuldade": "dificil",
+    "user_input": "Qual laboratório de ensino tem mais computadores, e quantos a mais que o LCC1?",
+    "reference": "O LCC3 é o laboratório de ensino com mais computadores, com 120 máquinas, 65 a mais que o LCC1, que tem 55."
+  },
+  {
+    "dificuldade": "dificil",
+    "user_input": "Quantos alunos entram no curso por ano?",
+    "reference": "O curso oferece 90 vagas no 1º semestre e 90 vagas no 2º semestre, totalizando 180 vagas por ano."
+  },
+  {
+    "dificuldade": "dificil",
+    "user_input": "Com quem eu falo sobre assuntos da graduação no curso?",
+    "reference": "Os assuntos da graduação são tratados pela Coordenação de Graduação, cujo coordenador é o Prof. Dalton Dario Serey Guerrero e cuja secretária é Klébia Larubia Soares dos Santos. A secretaria pode ser contatada pelo e-mail secgrad@computacao.ufcg.edu.br ou pelo telefone +55 (83) 2101-1027."
+  },
+  {
+    "dificuldade": "dificil",
+    "user_input": "Se eu quisesse entrar no mestrado em 2025.1, ainda daria para me inscrever no dia 10 de novembro de 2024?",
+    "reference": "Não. As inscrições para a seleção do mestrado com ingresso em 2025.1 ficaram abertas de 16 de outubro de 2024 até 08 de novembro de 2024, às 23h59, então no dia 10 de novembro já estariam encerradas."
+  }
+]

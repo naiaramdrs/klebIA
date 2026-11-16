@@ -10,3 +10,5 @@ google.genai
 gunicorn
 requests
 supabase
+openai
+python-dotenv
