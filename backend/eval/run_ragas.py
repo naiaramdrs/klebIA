@@ -2,8 +2,8 @@
 Avaliação da KlebIA com o Ragas.
 
 Etapas (rodar de dentro da pasta backend/):
-    python -m eval.run_ragas gerar     # roda a KlebIA no dataset e salva respostas + chunks
-    python -m eval.run_ragas avaliar   # roda as métricas do Ragas sobre as respostas salvas
+    python -m eval.run_ragas gerar --k 5     # roda a KlebIA no dataset e salva respostas + chunks
+    python -m eval.run_ragas avaliar --k 5   # roda as métricas do Ragas sobre as respostas salvas
 
 Opções úteis:
     --k 3            quantidade de chunks recuperados (padrão 5)
